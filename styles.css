@@ -13,8 +13,12 @@ html {
 
 #card-backdrop {
     background-color: rgba(10,10,10,0.5);
-    margin-top: 5em;
+    margin-top: 0em;
     border-radius: 3px;
+}
+
+#title {
+    background-color: black;
 }
 
 #profile {
@@ -23,11 +27,11 @@ html {
     background-position-y: center;
     background-position-x: center;
     filter: grayscale(75%);
-    height: 30em;
+    height: 20em;
 }
 
 #bio {
-    margin-top:8em;
+    margin-top:5em;
 }
 
 #char_btn {
