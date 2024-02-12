@@ -1,0 +1,35 @@
+body, container {
+    background: none !important;
+    color: white !important;
+    height: 100%;   
+}
+
+html {
+    background-image: conic-gradient(at 50% 75%, rgb(60,50,50), rgb(10,10,10), rgb(60,50,50)) !important;
+    height: 100%;   
+    background-color: black; 
+    color: white !important;
+}
+
+#card-backdrop {
+    background-color: rgba(10,10,10,0.5);
+    margin-top: 5em;
+    border-radius: 3px;
+}
+
+#profile {
+    background-size: cover;
+    background-image: url("./MePic.png");
+    background-position-y: center;
+    filter: grayscale(75%);
+    height: 30em;
+}
+
+#bio {
+    margin-top:8em;
+}
+
+#char_btn {
+    margin: auto;
+    text-align: center;
+}
