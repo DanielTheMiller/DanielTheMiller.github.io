@@ -39,13 +39,6 @@ html {
     margin: auto;
     text-align: center;
 }
-/*
-.square {
-    height: 0; 
-    width:50%;
-    padding-bottom:50%;
-    background-color:red
-}*/
 
 .info-box {
     background-color: rgba(0,0,0,0.85);
@@ -75,5 +68,5 @@ html {
 }
 
 #main-card {
-    max-height: 70em;
+    margin-top: 5vh
 }
