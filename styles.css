@@ -38,6 +38,7 @@ html {
 #char_btn {
     margin: auto;
     text-align: center;
+    width: 100%;
 }
 
 .info-box {
@@ -60,7 +61,6 @@ html {
     border-color: rgb(58, 0, 0);
     text-align: center;
 }
-
 
 .info-box > a:hover {
     background-color: red;
