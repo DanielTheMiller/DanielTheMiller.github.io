@@ -5,8 +5,10 @@ body, container {
 }
 
 html {
-    background-image: conic-gradient(at 50% 75%, rgb(60,50,50), rgb(10,10,10), rgb(60,50,50)) !important;
-    height: 100%;   
+    background-image: linear-gradient(rgb(60,50,50), rgb(10,10,10), rgb(60,50,50)) !important;
+    background-size: 400% 400%;
+    animation: gradient 12s ease infinite;
+    height: 100%;
     background-color: black; 
     color: white !important;
 }
@@ -39,6 +41,12 @@ html {
     margin: auto;
     text-align: center;
     width: 100%;
+    background-color: rgb(160, 52, 33);
+    border-color: rgb(63, 25, 10);
+}
+
+#char_btn:hover {
+    background-color: red
 }
 
 .info-box {
@@ -69,4 +77,16 @@ html {
 
 #main-card {
     margin-top: 5vh
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 0%;
+	}
+    50% {
+		background-position: 100% 100%;
+	}
+	100% {
+		background-position: 0% 0%;
+	}
 }
