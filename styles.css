@@ -35,10 +35,6 @@ html {
     height: 100vw;
 }
 
-#bio {
-    margin-top:5em;
-}
-
 #char_btn {
     margin: auto;
     text-align: center;
@@ -76,4 +72,8 @@ html {
 .info-box > a:hover {
     background-color: red;
     border-color: darkred;
+}
+
+#main-card {
+    max-height: 70em;
 }
