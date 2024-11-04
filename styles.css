@@ -1,31 +1,58 @@
-body, container {
-    background: none !important;
-    color: white !important;
-    height: 100%;   
-}
-
 html {
-    background-image: linear-gradient(rgb(60,50,50), rgb(10,10,10), rgb(60,50,50)) !important;
+    background-image: linear-gradient(rgb(34, 0, 58), rgb(55, 11, 136), rgb(41, 16, 76)) !important;
     background-size: 400% 400%;
-    animation: gradient 12s ease infinite;
+    animation: gradient 20s ease infinite;
     height: 100%;
     background-color: black; 
     color: white !important;
 }
 
-#card-backdrop {
-    background-color: rgba(10,10,10,0.5);
-    margin-top: 0em;
-    border-radius: 3px;
+body {
+    margin: 0px;
+}
+
+body, container {
+    background: none !important;
+    color: white !important;
+    height: 100%;
 }
 
 #title {
-    background-image: linear-gradient(rgb(0,0,0), rgba(10,10,10,0)) !important;
+    /*background-image: linear-gradient(rgb(0,0,0), rgba(10,10,10,0)) !important;*/
     font-family: "Abril Fatface", serif;
     font-style: normal;
-    margin-top: 0em;
-    padding-top: 1em;
-    margin-bottom: 1em;
+    font-weight: 500;
+    font-size: clamp(1rem, 5vw, 10vh);
+    top: 10%;
+}
+
+.text { 
+    position: absolute;
+    left: 5%;
+    font-size: clamp(1rem, 3vw, 10vh);
+    font-family: "Figtree", sans-serif;
+    font-weight: 100;
+}
+
+#job-title {
+    top: 21%;
+}
+
+#email {
+    bottom: 5%;
+}
+
+.card-details {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+}
+
+.card-profile {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    right: 0px;
 }
 
 #profile {
@@ -34,7 +61,7 @@ html {
     background-position-y: center;
     background-position-x: center;
     /*filter: grayscale(75%);*/
-    height: 100vw;
+    height: 150vw;
 }
 
 #char_btn {
@@ -47,6 +74,26 @@ html {
 
 #char_btn:hover {
     background-color: red
+}
+
+div.card-profile>img {
+    border-style: solid;
+    border-color: white;
+    border-width: 1em;
+    border-radius: 100%;
+    position:absolute;
+    width: 75%;
+    aspect-ratio: 1 / 1;
+    top: 17.5%;
+}
+
+#stripe
+{
+    position: absolute;
+    height: 100%;
+    width: 25%;
+    left: 28%;
+    background-color: white;
 }
 
 .info-box > p {
@@ -65,8 +112,21 @@ html {
     border-color: darkred;
 }
 
+#card-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #main-card {
-    margin-top: 1em; /*7vh*/
+    position: absolute;
+    transition: transform 0.3s ease; /* Smooth transition for non-hover states */
+    background-color: rgb(21, 21, 21);
+    border-radius: 1.5em;
+    width: 85.6vw;
+    aspect-ratio: 85.6 / 53.98;
+    margin:auto;
 }
 
 @keyframes gradient {
@@ -79,4 +139,30 @@ html {
 	100% {
 		background-position: 0% 0%;
 	}
+}
+
+  /* Define the rocking animation */
+  @keyframes rock {
+    0%, 100% { transform: rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1); }   /* Slight tilt forward */
+    33% { transform: rotateX(-15deg) rotateY(5deg) scale3d(0.95, 0.95, 0.95); }       /* Tilt backward in the middle */
+  }
+
+  /* Apply animation on hover */
+  #main-card:hover {
+    animation: rock 1s ease-in-out infinite;
+  }
+
+  :root {
+    --scale-factor: 0.75; /* 50% of the viewport height */
+  }
+
+  @media (max-width: 600px) {
+    #main-card {
+        transform: rotate(90deg);
+        width: calc(85.6vh * var(--scale-factor));
+    }
+
+    #title {
+        font-size: clamp(1rem, calc(5vh * var(--scale-factor)), 10vw);
+    }
 }
