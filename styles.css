@@ -121,10 +121,11 @@ div.card-profile>img {
 
 #main-card {
     position: absolute;
-    transition: transform 0.3s ease; /* Smooth transition for non-hover states */
+    /*transition: transform 0.3s ease; /* Smooth transition for non-hover states */
     background-color: rgb(21, 21, 21);
     border-radius: 1.5em;
-    width: 85.6vw;
+    width: 90vw;
+    height: unset;
     aspect-ratio: 85.6 / 53.98;
     margin:auto;
 }
@@ -148,18 +149,19 @@ div.card-profile>img {
   }
 
   /* Apply animation on hover */
-  #main-card:hover {
+  /*#main-card:hover {
     animation: rock 1s ease-in-out infinite;
-  }
+  }*/
 
   :root {
-    --scale-factor: 0.75; /* 50% of the viewport height */
+    --scale-factor: 0.9; /* 50% of the viewport height */
   }
 
   @media (max-width: 600px) {
     #main-card {
         transform: rotate(90deg);
-        width: calc(85.6vh * var(--scale-factor));
+        height: calc(100vw * var(--scale-factor));
+        width: unset;
     }
 
     #title {
