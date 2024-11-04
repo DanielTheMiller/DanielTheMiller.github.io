@@ -50,10 +50,12 @@ body, container {
 }
 
 .card-profile {
+    align-items: center;
+    display: flex;
     position: absolute;
-    width: 50%;
+    width: 40%;
     height: 100%;
-    right: 0px;
+    right: 10%;
 }
 
 #profile {
@@ -77,23 +79,25 @@ body, container {
     background-color: red
 }
 
-div.card-profile>img {
+#me-image {
     border-style: solid;
     border-color: white;
     border-width: 1em;
     border-radius: 100%;
     position:absolute;
-    width: 75%;
+    width: 100%;
     aspect-ratio: 1 / 1;
-    top: 17.5%;
+    background-image: url("./MePic.png");
+    background-size: contain;
+    z-index: 2;
 }
 
 #stripe
 {
     position: absolute;
     height: 100%;
-    width: 25%;
-    left: 28%;
+    width: 40%;
+    left: calc(30% + 1em);
     background-color: white;
 }
 
@@ -125,8 +129,10 @@ div.card-profile>img {
     /*transition: transform 0.3s ease; /* Smooth transition for non-hover states */
     background-color: rgb(21, 21, 21);
     border-radius: 1.5em;
-    width: 90vw;
+    width: 70vw;
     height: unset;
+    /*max-height: 100%;
+    max-width: 100%;*/
     aspect-ratio: 85.6 / 53.98;
     margin:auto;
     box-shadow: 7px 7px 5px rgb(114, 114, 114);
