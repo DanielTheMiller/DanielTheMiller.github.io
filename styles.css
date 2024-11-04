@@ -67,28 +67,31 @@ body, container {
     height: 150vw;
 }
 
-#char_btn {
-    margin: auto;
-    text-align: center;
+#me-image-outline {
+    /*border-color: var(--background-black);*/
+    background-image: url('./background-noise.png');
+    z-index: 3;
     width: 100%;
-    background-color: rgb(160, 52, 33);
-    border-color: rgb(63, 25, 10);
+    border: 1em solid transparent;
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
 }
 
-#char_btn:hover {
-    background-color: red
-}
-
-#me-image {
+#me-image-outline, #me-image {
+    aspect-ratio: 1 / 1;
     border-style: solid;
-    border-color: white;
     border-width: 1em;
     border-radius: 100%;
     position:absolute;
-    width: 100%;
-    aspect-ratio: 1 / 1;
+}
+
+#me-image {
+    border-color: white;
     background-image: url("./MePic.png");
     background-size: contain;
+    left: 1em;
+    top: 1em;
+    width: calc(100% - 4em);
     z-index: 2;
 }
 
@@ -127,7 +130,7 @@ body, container {
 #main-card {
     position: absolute;
     /*transition: transform 0.3s ease; /* Smooth transition for non-hover states */
-    background-color: rgb(21, 21, 21);
+    background-image: url('./background-noise.png');/*var(--background-black);*/
     border-radius: 1.5em;
     width: 70vw;
     height: unset;
@@ -135,7 +138,7 @@ body, container {
     max-width: 100%;*/
     aspect-ratio: 85.6 / 53.98;
     margin:auto;
-    box-shadow: 7px 7px 5px rgb(114, 114, 114);
+    box-shadow: 4px 5px 6px rgb(114, 114, 114)
 }
 
 @keyframes gradient {
@@ -163,6 +166,7 @@ body, container {
 
   :root {
     --scale-factor: 0.9; /* 50% of the viewport height */
+    --background-black: rgb(21, 21, 21);
   }
 
   @media (max-width: 600px) {
