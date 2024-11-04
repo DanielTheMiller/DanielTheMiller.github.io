@@ -53,9 +53,9 @@ body, container {
     align-items: center;
     display: flex;
     position: absolute;
-    width: 40%;
+    width: 50%;
     height: 100%;
-    right: 10%;
+    right: 7.5%;
 }
 
 #profile {
@@ -93,6 +93,7 @@ body, container {
     top: 1em;
     width: calc(100% - 4em);
     z-index: 2;
+    filter:saturate(60%)
 }
 
 #stripe
@@ -132,7 +133,7 @@ body, container {
     /*transition: transform 0.3s ease; /* Smooth transition for non-hover states */
     background-image: url('./background-noise.png');/*var(--background-black);*/
     border-radius: 1.5em;
-    width: 70vw;
+    width: 60vw;
     height: unset;
     /*max-height: 100%;
     max-width: 100%;*/
