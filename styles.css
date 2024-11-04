@@ -1,9 +1,10 @@
 html {
-    background-image: linear-gradient(rgb(34, 0, 58), rgb(55, 11, 136), rgb(41, 16, 76)) !important;
-    background-size: 400% 400%;
-    animation: gradient 20s ease infinite;
+    /*background-image: linear-gradient(rgb(34, 0, 58), rgb(55, 11, 136), rgb(41, 16, 76)) !important;*/
+    background: radial-gradient(rgb(160, 160, 160), rgb(255, 255, 255), rgb(174, 174, 174));
+    /*background-size: 200% 200%;*/
+    /*animation: gradient 20s ease infinite;*/
     height: 100%;
-    background-color: black; 
+    /*background-color: black; */
     color: white !important;
 }
 
@@ -128,6 +129,7 @@ div.card-profile>img {
     height: unset;
     aspect-ratio: 85.6 / 53.98;
     margin:auto;
+    box-shadow: 7px 7px 5px rgb(114, 114, 114);
 }
 
 @keyframes gradient {
