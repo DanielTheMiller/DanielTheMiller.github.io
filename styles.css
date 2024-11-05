@@ -23,14 +23,14 @@ body, container {
     font-family: "Abril Fatface", serif;
     font-style: normal;
     font-weight: 500;
-    font-size: clamp(calc(1rem * var(--scale-factor)), calc(3vw * var(--scale-factor)), calc(10vh * var(--scale-factor)));
+    font-size: clamp(calc(1rem * var(--scale-factor)), calc(4vw * var(--scale-factor)), calc(10vh * var(--scale-factor)));
     top: 10%;
 }
 
 .text { 
     position: absolute;
     left: 5%;
-    font-size: clamp(calc(1rem * var(--scale-factor)), calc(3vw * var(--scale-factor)), calc(10vh * var(--scale-factor)));
+    font-size: clamp(calc(1rem * var(--scale-factor)), calc(2.5vw * var(--scale-factor)), calc(10vh * var(--scale-factor)));
     font-family: "Figtree", sans-serif;
     font-weight: 100;
 }
