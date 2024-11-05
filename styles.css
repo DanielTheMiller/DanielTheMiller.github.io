@@ -23,14 +23,14 @@ body, container {
     font-family: "Abril Fatface", serif;
     font-style: normal;
     font-weight: 500;
-    font-size: clamp(1rem, 5vw, 10vh);
+    font-size: clamp(calc(1rem * var(--scale-factor)), calc(3vw * var(--scale-factor)), calc(10vh * var(--scale-factor)));
     top: 10%;
 }
 
 .text { 
     position: absolute;
     left: 5%;
-    font-size: clamp(1rem, 3vw, 10vh);
+    font-size: clamp(calc(1rem * var(--scale-factor)), calc(3vw * var(--scale-factor)), calc(10vh * var(--scale-factor)));
     font-family: "Figtree", sans-serif;
     font-weight: 100;
 }
@@ -93,7 +93,7 @@ body, container {
     top: 1em;
     width: calc(100% - 4em);
     z-index: 2;
-    filter:saturate(60%)
+    filter:saturate(90%)
 }
 
 #stripe
@@ -178,6 +178,6 @@ body, container {
     }
 
     #title {
-        font-size: clamp(1rem, calc(5vh * var(--scale-factor)), 10vw);
+        font-size: clamp(calc(1rem * var(--scale-factor)), calc(5vh * var(--scale-factor)), calc(10vw * var(--scale-factor)));
     }
 }
