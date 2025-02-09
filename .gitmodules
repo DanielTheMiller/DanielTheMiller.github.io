@@ -1,0 +1,3 @@
+[submodule "chat-replay"]
+	path = chat-replay
+	url = https://github.com/DanielTheMiller/chat-replay
